@@ -57,7 +57,7 @@
         </div>
 
         <div class="hidden md:flex items-center gap-10 text-gray-400 font-medium text-sm">
-            <a href="/"
+            <a href="/home"
                 class="text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/2 after:h-0.5 after:bg-white">Home</a>
             <a href="/pengetahuan" class="hover:text-white transition duration-300">Pengetahuan</a>
             <a href="#" class="hover:text-white transition duration-300">Proyek</a>
@@ -573,7 +573,7 @@
                 <div class="lg:col-span-3">
                     <h4 class="text-lg font-bold mb-6">Navigasi</h4>
                     <ul class="space-y-4 text-gray-400 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/home" class="hover:text-white transition">Home</a></li>
                         <li><a href="#" class="hover:text-white transition">Pengetahuan</a></li>
                         <li><a href="#" class="hover:text-white transition">Proyek</a></li>
                         <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
