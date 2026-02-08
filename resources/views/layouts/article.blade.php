@@ -55,11 +55,10 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="/home"
-                        class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="/"class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Home</a>
                     <a href="/pengetahuan"
                         class="text-sm font-bold text-white transition-colors border-b-2 border-white pb-1">Pengetahuan</a>
-                    <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Proyek</a>
+                    <a href="/portofolio" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Portofolio</a>
                     <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Tentang
                         Kami</a>
                 </div>
@@ -227,10 +226,10 @@
                 <div class="lg:col-span-3">
                     <h4 class="text-lg font-bold mb-6">Navigasi</h4>
                     <ul class="space-y-4 text-gray-400 text-sm">
-                        <li><a href="/home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="/pengetahuan" class="hover:text-white transition-colors">Pengetahuan</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Proyek</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="/portofolio" class="hover:text-white transition-colors">Portofolio</a></li>
+                        <li><a href="portofolio" class="hover:text-white transition-colors">Tentang Kami</a></li>
                     </ul>
                 </div>
 

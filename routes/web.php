@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 //roy
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 //atha
@@ -15,3 +15,7 @@ Route::get('/pengetahuan/{slug}', function ($slug) {
     }
     abort(404);
 });
+Route::get('/portofolio', function() {
+    return view('portofolio');
+})
+?>

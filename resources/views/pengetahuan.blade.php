@@ -50,7 +50,7 @@
             <a href="/" class="hover:text-white transition duration-300">Home</a>
             <a href="/pengetahuan"
                 class="text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/2 after:h-0.5 after:bg-white">Pengetahuan</a>
-            <a href="#" class="hover:text-white transition duration-300">Proyek</a>
+            <a href="/portofolio" class="hover:text-white transition duration-300">Portofolio</a>
             <a href="#" class="hover:text-white transition duration-300">Tentang Kami</a>
         </div>
 
@@ -255,7 +255,7 @@
                     <ul class="space-y-4 text-gray-400 text-sm">
                         <li><a href="/" class="hover:text-white transition">Home</a></li>
                         <li><a href="/pengetahuan" class="hover:text-white transition">Pengetahuan</a></li>
-                        <li><a href="#" class="hover:text-white transition">Proyek</a></li>
+                        <li><a href="#" class="hover:text-white transition">Portofolio</a></li>
                         <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
                     </ul>
                 </div>
