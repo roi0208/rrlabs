@@ -41,7 +41,7 @@
                 <a href="/" class="hover:text-white transition duration-300">Home</a>
                 <a href="/pengetahuan" class="hover:text-white transition duration-300">Pengetahuan</a>
                 <a href="/proyek" class="text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/2 after:h-0.5 after:bg-white">Portofolio</a>
-                <a href="#" class="hover:text-white transition duration-300">Tentang Kami</a>
+                <a href="/tentang-kami" class="hover:text-white transition duration-300">Tentang Kami</a>
             </div>
             <div class="flex items-center gap-4">
                 <span class="font-bold">EN</span>
@@ -145,10 +145,10 @@
                 <div class="lg:col-span-3">
                     <h4 class="text-lg font-bold mb-6">Navigasi</h4>
                     <ul class="space-y-4 text-gray-400 text-sm">
-                        <li><a href="/home" class="hover:text-white transition">Home</a></li>
-                        <li><a href="#" class="hover:text-white transition">Pengetahuan</a></li>
-                        <li><a href="#" class="hover:text-white transition">Portofolio</a></li>
-                        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/pengetahuan" class="hover:text-white transition">Pengetahuan</a></li>
+                        <li><a href="/portofolio" class="hover:text-white transition">Portofolio</a></li>
+                        <li><a href="/tentang-kami" class="hover:text-white transition">Tentang Kami</a></li>
                     </ul>
                 </div>
 

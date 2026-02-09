@@ -61,7 +61,7 @@
                 class="text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/2 after:h-0.5 after:bg-white">Home</a>
             <a href="/pengetahuan" class="hover:text-white transition duration-300">Pengetahuan</a>
             <a href="/portofolio" class="hover:text-white transition duration-300">Portofolio</a>
-            <a href="#" class="hover:text-white transition duration-300">Tentang Kami</a>
+            <a href="/tentang-kami" class="hover:text-white transition duration-300">Tentang Kami</a>
         </div>
 
         <div class="flex items-center gap-6">

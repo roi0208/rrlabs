@@ -17,5 +17,10 @@ Route::get('/pengetahuan/{slug}', function ($slug) {
 });
 Route::get('/portofolio', function() {
     return view('portofolio');
-})
+});
+
+// Adib:
+Route::get('/tentang-kami', function () {
+    return view('tentang_kami'); // Ini merujuk ke file tentang_kami.blade.php
+});
 ?>

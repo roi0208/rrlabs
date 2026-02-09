@@ -59,7 +59,7 @@
                     <a href="/pengetahuan"
                         class="text-sm font-bold text-white transition-colors border-b-2 border-white pb-1">Pengetahuan</a>
                     <a href="/portofolio" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Portofolio</a>
-                    <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Tentang
+                    <a href="/tentang-kami" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Tentang
                         Kami</a>
                 </div>
 
@@ -229,7 +229,7 @@
                         <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="/pengetahuan" class="hover:text-white transition-colors">Pengetahuan</a></li>
                         <li><a href="/portofolio" class="hover:text-white transition-colors">Portofolio</a></li>
-                        <li><a href="portofolio" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="/tentang-kami" class="hover:text-white transition-colors">Tentang Kami</a></li>
                     </ul>
                 </div>
 
