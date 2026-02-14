@@ -6,7 +6,7 @@
     <title>Tentang Kami - RRLabs</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -19,42 +19,63 @@
          style="background-image: url('{{ asset('images/bg-tentang_kami.png') }}');">
     </div>
 
-    <nav class="flex items-center justify-between px-8 py-6 w-full max-w-7xl mx-auto">
-        <div class="flex items-center gap-2">
-            <div class="text-slate-800">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                    <path d="M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7Z"/>
-                    <path d="M8 8V6a4 4 0 1 1 8 0v2"/>
-                    <circle cx="9" cy="13" r="1.5" fill="white"/>
-                    <circle cx="15" cy="13" r="1.5" fill="white"/>
-                </svg>
-            </div>
-            <div class="flex flex-col leading-none">
-                <span class="font-bold text-lg tracking-tight">RRLabs</span>
-                <span class="text-[10px] text-gray-500 font-medium">sakkus</span>
-            </div>
+    <nav x-data="{ open: false }" class="relative flex items-center justify-between px-8 py-6 w-full max-w-7xl mx-auto">
+    <div class="flex items-center gap-2">
+        <div class="text-slate-800">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                <path d="M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7Z"/>
+                <path d="M8 8V6a4 4 0 1 1 8 0v2"/>
+                <circle cx="9" cy="13" r="1.5" fill="white"/>
+                <circle cx="15" cy="13" r="1.5" fill="white"/>
+            </svg>
         </div>
-
-        <div class="hidden md:flex items-center gap-10 text-sm font-medium text-slate-600">
-            <a href="{{ url('/') }}" class="hover:text-black transition">Home</a>
-            <a href="{{ url('/pengetahuan') }}" class="hover:text-black transition">Pengetahuan</a>
-            <a href="{{ url('/portofolio') }}" class="hover:text-black transition">Proyek</a>
-            <div class="relative text-black font-semibold cursor-default">
-                Tentang Kami
-                <span class="absolute -bottom-2 left-0 w-full h-[2px] bg-black"></span>
-            </div>
+        <div class="flex flex-col leading-none">
+            <span class="font-bold text-lg tracking-tight">RRLabs</span>
+            <span class="text-[10px] text-gray-500 font-medium">sakkus</span>
         </div>
+    </div>
 
-        <div class="flex items-center gap-6 text-sm font-medium">
-            <span class="cursor-pointer hover:text-slate-600">EN</span>
-            <button class="focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 -rotate-12 fill-black">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                </svg>
-            </button>
+    <div class="hidden md:flex items-center gap-10 text-sm font-medium text-slate-600">
+        <a href="{{ url('/') }}" class="hover:text-black transition">Home</a>
+        <a href="{{ url('/pengetahuan') }}" class="hover:text-black transition">Pengetahuan</a>
+        <a href="{{ url('/portofolio') }}" class="hover:text-black transition">Proyek</a>
+        <div class="relative text-black font-semibold cursor-default">
+            Tentang Kami
+            <span class="absolute -bottom-2 left-0 w-full h-[2px] bg-black"></span>
         </div>
-    </nav>
+    </div>
 
+    <div class="flex items-center gap-6 text-sm font-medium">
+        <span class="cursor-pointer hover:text-slate-600 hidden sm:inline">EN</span>
+        <button class="focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 -rotate-12 fill-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+        </button>
+
+        <button @click="open = !open" class="md:hidden focus:outline-none text-slate-800">
+            <svg x-show="!open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg x-show="open" x-cloak class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div x-show="open" 
+         x-cloak
+         @click.away="open = false"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         class="md:hidden absolute left-0 right-0 top-full bg-white border-t border-gray-100 px-8 py-6 flex flex-col gap-4 text-slate-600 z-50 shadow-lg">
+        <a href="{{ url('/') }}" class="hover:text-black transition">Home</a>
+        <a href="{{ url('/pengetahuan') }}" class="hover:text-black transition">Pengetahuan</a>
+        <a href="{{ url('/portofolio') }}" class="hover:text-black transition">Proyek</a>
+        <a href="#" class="text-black font-bold">Tentang Kami</a>
+    </div>
+</nav>
     <header class="flex items-center justify-center min-h-[50vh] pb-20">
         <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight drop-shadow-sm">
             Tentang Kami
